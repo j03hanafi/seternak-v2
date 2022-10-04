@@ -33,7 +33,7 @@ class Db_Class{
                                 <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-spacing: 2px 5px;" bgcolor="#fff">
                                     <tr>
                                     <td align="center" style="padding: 5px 5px 5px 5px;">
-                                        <img src="assets/logop.jpg" alt="Logo" style="width:100px; border:0;"/>
+                                        <img src="https://seternak.herokuapp.com/assets/logop.jpg" alt="Logo" style="width:100px; border:0;"/>
                                     </td>
                                     </tr>
                                     <tr>
