@@ -7,10 +7,10 @@
 	// $dbname = "dvaq6sqisd3nt";
 	// $conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
 
-	$host = "localhost";
-	$user = "postgres";
-	$pass = "code2016";
+	$host = "ec2-3-208-79-113.compute-1.amazonaws.com";
+	$user = "rwvivulvergprv";
+	$pass = "315b2c2427831e53942cebc635871d6ad1512d09892e3a3d515bee90fa3ffb26";
 	$port = "5432";
-	$dbname = "seternak";
+	$dbname = "d10sllagb38kpu";
 	$conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
 ?>
