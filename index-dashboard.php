@@ -246,7 +246,7 @@
     <script>
         $(document).ready(function() {
             //Line Chart
-            let base_url = "/seternakv2-master/function/chart-dashboard.php";
+            let base_url = "https://seternak.herokuapp.com/function/chart-dashboard.php";
             $.ajax({
                 url: base_url,
                 dataType: 'json',

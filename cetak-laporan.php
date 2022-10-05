@@ -19,7 +19,7 @@
 
     $datas = pg_query($conn,$query); 
 
-    require_once __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . 'https://seternak.herokuapp.com/vendor/autoload.php';
 
     $mpdf = new \Mpdf\Mpdf();
 
