@@ -19,8 +19,6 @@
 
     $datas = pg_query($conn,$query); 
 
-    require_once 'https://seternak.herokuapp.com/vendor/autoload.php';
-
     $mpdf = new \Mpdf\Mpdf();
 
     $html = '<!DOCTYPE html>
