@@ -18,5 +18,8 @@
     ORDER BY pemesanan.tgl_pesan ASC");
 
     $datas = pg_query($conn,$query); 
+
+    require_once __DIR__ . 'https://seternak.herokuapp.com/vendor/autoload.php';
+
 ?>
 
