@@ -19,7 +19,6 @@
 
     $datas = pg_query($conn,$query); 
 
-    require_once __DIR__ . 'https://seternak.herokuapp.com/vendor/autoload.php';
-
+    var_dump( realpath( __DIR__ . '/' ) );
 ?>
 
