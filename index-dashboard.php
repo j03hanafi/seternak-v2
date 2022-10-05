@@ -291,7 +291,7 @@
             });
 
             //Doughnut Chart
-            let url = "/seternakv2-master/function/doughnut-chart-dashboard.php";
+            let url = "https://seternak.herokuapp.com/seternakv2-master/function/doughnut-chart-dashboard.php";
             $.ajax({
                 url: url,
                 dataType: 'json',
