@@ -19,6 +19,8 @@
 
     $datas = pg_query($conn,$query); 
 
+    include 'vendor/autoload.php';
+
     $mpdf = new \Mpdf\Mpdf();
 
     $html = '<!DOCTYPE html>
