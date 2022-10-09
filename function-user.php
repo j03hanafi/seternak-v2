@@ -62,12 +62,9 @@ class Db_Class{
                                         </tr>
                                         <tr>
                                             <td style="padding: 20px 0 20px 0; font-family: Nunito, sans-serif; font-size: 16px; text-align: center;">
-                                            <form action="https://seternak.herokuapp.com/function/activate-user.php" method="post">
-                                            <input type="hidden" name="username" value="'.$_POST['username'].'">
-                                            <button type="submit" name="activate" style="border-radius: 8px;background-color: #0E8450; border: none; color: white; padding: 15px 40px; text-align: center; display: inline-block; font-family: Nunito, sans-serif; font-size: 18px; font-weight: bold; cursor: pointer;">
+                                            <a href="https://seternak.herokuapp.com/function/activate-user.php?username='.$_POST['username'].'" style="border-radius: 8px;background-color: #0E8450; border: none; color: white; padding: 15px 40px; text-align: center; display: inline-block; font-family: Nunito, sans-serif; font-size: 18px; font-weight: bold; cursor: pointer;">
                                                 Konfimasi Email
-                                            </button>
-                                            </form>
+                                            </a>
                                             </td>
                                         </tr>
                                         <tr>
