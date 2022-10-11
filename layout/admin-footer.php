@@ -13,6 +13,7 @@
                 <div id="ifoot" class="col pt-3 text-end"><a class="mx-1 nav-link  text-light" href="index-informasi.php">Informasi</a></div>
                 <div id="ifoot" class="col pt-3 text-end"><a class="mx-1 nav-link text-light" href="index-diskusi.php">Forum</a></div>
                 <div id="ifoot" class="col pt-3 text-end"><a class="mx-1 nav-link text-light" href="read-user.php">Manage User</a></div>
+                <div id="ifoot" class="col pt-3 text-end"><a class="mx-1 nav-link text-light" href="index-komoditas.php">Manage Komoditas</a></div>
                 <div id="ifoot" class="col pt-3 text-end"><a class="mx-1 nav-link text-light" href="index-faq.php">FAQ</a></div>
             </div>
             <hr class="my-2 text-light">

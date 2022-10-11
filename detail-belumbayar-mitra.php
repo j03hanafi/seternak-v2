@@ -138,6 +138,7 @@
 
                     <div class="modal-body">
                     
+                        <p>No. Rekening: <?=$data->no_rek?></p>
                         <p>Tambahkan bukti pembayaran</p>
                         <form action="function/upload_bukti.php" method="post" enctype="multipart/form-data">
                         <div class="mb-3">

@@ -92,7 +92,6 @@
                             <th class="table-light">Action</th>
                         </tr>
                     </thead>
-                                       
                     <tbody>
                         <?php while($user = pg_fetch_object($users)): ?>
                         <tr align="center">

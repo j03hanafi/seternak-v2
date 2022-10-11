@@ -15,6 +15,7 @@
                   <a class="mx-4 nav-link  text-light" href="index-informasi.php">Informasi</a>
                   <a class="mx-4 nav-link text-light" href="index-diskusi.php">Forum</a>
                   <a class="mx-4 nav-link text-light" href="read-user.php">Manage User</a>
+                  <a class="mx-4 nav-link text-light" href="index-komoditas.php">Manage Komoditas</a>
                   <a class="mx-4 nav-link text-light" href="index-faq.php">FAQ</a>
             </div>
             <div class="ms-auto">

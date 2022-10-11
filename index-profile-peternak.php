@@ -385,6 +385,11 @@ if($cek > 0){
                 </div>
 
                 <div class="mb-3 col-lg-12 ps-5 pe-3 col-md-12 input-wrapper form-container">
+                  <label for="alamat_peternakan" class="form-label">Nomor Rekening</label>
+                  <input type="text" class="form-control" id="no_rek" name="no_rek" value="<?php echo $user_data['no_rek']; ?>" disabled>
+                </div>
+
+                <div class="mb-3 col-lg-12 ps-5 pe-3 col-md-12 input-wrapper form-container">
                   <label for="alamat_peternakan" class="form-label">Alamat Peternakan</label>
                   <textarea class="form-control" id="alamat_peternakan" name="alamat_peternakan" rows="3" disabled><?php echo $user_data['alamat_peternakan']; ?></textarea>
                 </div>
