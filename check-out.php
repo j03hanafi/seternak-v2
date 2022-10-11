@@ -8,6 +8,36 @@ if ($_SESSION['role'] != "1") {
 $username = $_SESSION['username'];
 $total=0;
 $id=$_GET['id'];
+$result = pg_query($conn, "SELECT keranjang.jumlah, 
+            status,id_keranjang,
+            mitra.id_pemilik,nama_usaha,
+            produk.id_produk, 
+            produk.nama_produk,
+            produk.foto,
+            produk.harga,
+            peternak.nama_peternakan,
+            public.user.foto as profile_pic,
+            public.user.alamat as alamat,
+            public.user.contact as contact,
+            public.user.kota from keranjang left join mitra on keranjang.id_pemilik=mitra.id_pemilik
+            left join produk on keranjang.id_produk=produk.id_produk
+            left join peternak on produk.id_peternak=peternak.id_peternak
+            left join public.user on mitra.id_pemilik=public.user.username where keranjang.id_pemilik='$username' and keranjang.status=1 and keranjang.id_keranjang='$id'"); 
+$result2 = pg_query($conn, "SELECT keranjang.jumlah, 
+            status,id_keranjang,
+            mitra.id_pemilik,nama_usaha,
+            produk.id_produk, 
+            produk.nama_produk,
+            produk.foto,
+            produk.harga,
+            peternak.nama_peternakan,
+            public.user.foto as profile_pic,
+            public.user.alamat as alamat,
+            public.user.contact as contact,
+            public.user.kota from keranjang left join mitra on keranjang.id_pemilik=mitra.id_pemilik
+            left join produk on keranjang.id_produk=produk.id_produk
+            left join peternak on produk.id_peternak=peternak.id_peternak
+            left join public.user on mitra.id_pemilik=public.user.username where keranjang.id_pemilik='$username' and keranjang.status=1 and keranjang.id_keranjang='$id'"); 
 // $jml_barang = $_POST['kuantitas'];
 
 // if(isset('tambah')){
@@ -325,6 +355,38 @@ $pecah = pg_fetch_assoc($query);
           </div>
         </div>
 
+        <div class="col-md-12 mt-5 mb-5 jarak">
+          <div class="card shadow-sm rounded">
+            <div class="card-header shadow-sm rounded-top hijau" style="background-color: #0E8550;">
+              <div class="card-title ps-3 fw-bold text-light">Metode Pengiriman</div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+
+              <?php while ($user_data = pg_fetch_array($result2)) { 
+                $subtotal = $user_data['jumlah']*$user_data['harga'];
+                $total = $total + $subtotal;
+              }?>
+
+                <div class="mb-3 pe-5 ps-5">
+                  <select class="form-control" name="metode_pengiriman" id="metode_pengiriman" required>
+                    <option value="1">Payokurir</option>
+                    <option value="2">Go-send</option>
+                    <?php if($total >= 500000){ ?>
+                    <option value="3">Pengantaran Langsung</option>
+                    <?php } ?>
+                  </select>
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
 
 
         <div class="col-md-12 mb-5 jarak">
@@ -355,21 +417,6 @@ $pecah = pg_fetch_assoc($query);
 
                 <?php
                 $i = 0;
-                $result = pg_query($conn, "SELECT keranjang.jumlah, 
-            status,id_keranjang,
-            mitra.id_pemilik,nama_usaha,
-            produk.id_produk, 
-            produk.nama_produk,
-            produk.foto,
-            produk.harga,
-            peternak.nama_peternakan,
-            public.user.foto as profile_pic,
-            public.user.alamat as alamat,
-            public.user.contact as contact,
-            public.user.kota from keranjang left join mitra on keranjang.id_pemilik=mitra.id_pemilik
-            left join produk on keranjang.id_produk=produk.id_produk
-            left join peternak on produk.id_peternak=peternak.id_peternak
-            left join public.user on mitra.id_pemilik=public.user.username where keranjang.id_pemilik='$username' and keranjang.status=1 and keranjang.id_keranjang='$id'");
                 while ($user_data = pg_fetch_array($result)) {
                  
                 ?>

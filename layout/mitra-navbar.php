@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
                 <a class="mx-4 nav-link text-light " aria-current="page" href="index-pasar.php">Pasar</a>
-                <a class="mx-4 nav-link  text-light" href="index-tanya-ahli-mitra.php">Tanya Ahli</a>
-                <a class="mx-4 nav-link text-light" href="index-forum-mitra.php">Diskusi</a>
+                <!-- <a class="mx-4 nav-link  text-light" href="index-tanya-ahli-mitra.php">Tanya Ahli</a>
+                <a class="mx-4 nav-link text-light" href="index-forum-mitra.php">Diskusi</a> -->
             </div>
             <div  class="ms-auto">
                 

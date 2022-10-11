@@ -16,6 +16,7 @@
     left join mitra on pemesanan.id_pemilik=mitra.id_pemilik
     left join public.user on mitra.id_pemilik=public.user.username where pemesanan.no_pemesanan='$id'and pemesanan.id_pemilik='$username' and detail_pemesanan.status='1';");
     $datas = pg_query($dbconn,$query); 
+    $datas2 = pg_query($dbconn,$query); 
     
     
 
@@ -90,6 +91,38 @@
             <?php if($error != ''){ ?>
                 <div class="alert alert-danger" role="alert"><?= $error; ?></div>
             <?php } ?>
+            <?php while($data = pg_fetch_object($datas2)): ?>
+            
+                <div class="container">
+                    <div class="row g-0">
+                        <div style="float:left;">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0" >
+                                    <!-- <img id="image2" class="rounded-circle" src="assets/ style="float:left;"> -->
+                                </div>
+                                <div class="flex-shrink-1">
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="input-wrapper ">
+                            <div style="text-align: left;">
+                                <h5><b style="color: #0E8550;"><?php echo $data->bank_rek ; ?></b></h5>
+                                <h5><?php echo $data->pemilik_rek ; ?></h5>
+                            </div>
+                            <input type="text" class="form-control" id="no_rek" name="no_rek" value="<?php echo $data->no_rek; ?>" readonly>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; ?> 
+                <br>
+            </div>
+            <div class="card" style="padding:10px;">
+            <?php if($error != ''){ ?>
+                <div class="alert alert-danger" role="alert"><?= $error; ?></div>
+            <?php } ?>
             <?php while($data = pg_fetch_object($datas)): ?>
             
                 <div class="container">
@@ -109,6 +142,19 @@
                         <div class="col-md-6" style="margin-top:20px;">
                             <img id="image" class="rounded float-start" src="assets/produk/<?=$data->foto_produk?>" alt="">
                             <h6 id="left" class="card-title">Kode : <?=$data->id_produk?><?php $id_produk=$data->id_produk ?></h6>
+                            <h6 id="left" class="card-title">Metode Pengiriman : 
+                                <?php
+                                    if($data->metode_pengiriman == 1){
+                                        echo "Payokurir";
+                                    }elseif($data->metode_pengiriman == 2){
+                                        echo "Go-send";
+                                    }elseif($data->metode_pengiriman == 3){
+                                        echo "Pengantaran Langsung";
+                                    }else{
+                                        echo "-";
+                                    }
+                                ?>
+                            </h6>
                             <h6 id="left" class="card-title"><?=$data->nama_peternakan?></h6>
                             <h6 id="left" class="card-title"><?=$data->nama_produk?></h6>
                             <p id="left" class="card-text"><?=$data->kuantitas?> <?=$data->satuan?></p>
@@ -138,7 +184,6 @@
 
                     <div class="modal-body">
                     
-                        <p>No. Rekening: <?=$data->no_rek?></p>
                         <p>Tambahkan bukti pembayaran</p>
                         <form action="function/upload_bukti.php" method="post" enctype="multipart/form-data">
                         <div class="mb-3">

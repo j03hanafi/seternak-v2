@@ -26,6 +26,8 @@ $username = $_POST['username'];
   $alamat_peternakan=$_POST['alamat_peternakan'];
   $deskripsi_usaha=$_POST['deskripsi_usaha'];
   $no_rek=$_POST['no_rek'];
+  $pemilik_rek=$_POST['pemilik_rek'];
+  $bank_rek=$_POST['bank_rek'];
 
 
 
@@ -38,13 +40,13 @@ $username = $_POST['username'];
 
     $query = pg_query($conn, "UPDATE public.user SET name='$name', email='$email',  contact='$contact',kota='$kota', alamat='$alamat', foto='$foto' WHERE username='$username'");
   
-    $query2 = pg_query($conn, "UPDATE peternak SET nama_peternakan='$nama_peternakan', alamat_peternakan='$alamat_peternakan', deskripsi_usaha='$deskripsi_usaha', no_rek='$no_rek' WHERE id_peternak='$id_peternak'");
+    $query2 = pg_query($conn, "UPDATE peternak SET nama_peternakan='$nama_peternakan', alamat_peternakan='$alamat_peternakan', deskripsi_usaha='$deskripsi_usaha', no_rek='$no_rek', pemilik_rek='$pemilik_rek', bank_rek='$bank_rek' WHERE id_peternak='$id_peternak'");
 
 
   } else {
 
     $query = pg_query($conn, "UPDATE public.user SET name='$name', email='$email',  contact='$contact',kota='$kota', alamat='$alamat' WHERE username='$username'");
-    $query2 = pg_query($conn, "UPDATE peternak SET nama_peternakan='$nama_peternakan', alamat_peternakan='$alamat_peternakan', deskripsi_usaha='$deskripsi_usaha', no_rek='$no_rek' WHERE id_peternak='$id_peternak'");
+    $query2 = pg_query($conn, "UPDATE peternak SET nama_peternakan='$nama_peternakan', alamat_peternakan='$alamat_peternakan', deskripsi_usaha='$deskripsi_usaha', no_rek='$no_rek', pemilik_rek='$pemilik_rek', bank_rek='$bank_rek' WHERE id_peternak='$id_peternak'");
 
 
 

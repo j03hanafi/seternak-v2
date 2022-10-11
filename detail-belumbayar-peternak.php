@@ -135,6 +135,19 @@
                         <div class="col-md-6" style="margin-top:20px;">
                             <img id="image" class="rounded float-start" src="assets/produk/<?=$data->foto_produk?>" alt="">
                             <h6 id="left" class="card-title">No.<?=$data->no_pemesanan?>/<?=$data->id_produk?>/<?=$data->tgl_pesan?></h6>
+                            <h6 id="left" class="card-title">Metode Pengiriman : 
+                                <?php
+                                    if($data->metode_pengiriman == 1){
+                                        echo "Payokurir";
+                                    }elseif($data->metode_pengiriman == 2){
+                                        echo "Go-send";
+                                    }elseif($data->metode_pengiriman == 3){
+                                        echo "Pengantaran Langsung";
+                                    }else{
+                                        echo "-";
+                                    }
+                                ?>
+                            </h6>
                             <h6 id="left" class="card-title">Pesanan <?=$data->id_pemilik?></h6>
                             <h6 id="left" class="card-title"><?=$data->nama_produk?></h6>
                             <p id="left" class="card-text"><?=$data->kuantitas?> <?=$data->satuan?></p>

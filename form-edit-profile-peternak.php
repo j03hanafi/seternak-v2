@@ -266,7 +266,44 @@
               <input type="file" class="form-control" id="foto" name="foto" value="<?php echo $user_data['foto']; ?>">
             </div>
 
+            <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="card shadow-sm bg-body rounded">
+            <div class="card-header shadow-sm rounded" style="background-color: #0e8550;">
+              <div class="card-title ps-3 text-light fw-bold">Business Support</div>
+            </div>
+            <div class="card-body">
+            <a class="mx-4 nav-link text-dark" href="index-dashboard.php">Dashboard Bisnis</a>
+            <hr>
+            <a class="mx-4 nav-link text-dark" href="index-laporan.php">Laporan Penjualan</a>
+            </div>
 
+          </div>
+
+          <br>
+          <div class="card shadow-sm bg-body rounded">
+            <div class="card-header shadow-sm rounded" style="background-color: #0e8550;">
+              <div class="card-title ps-3 text-light fw-bold">Profil Rekening</div>
+            </div>
+            <div class="card-body">
+              <div class="input-wrapper" style="flex: 1;">
+                <label for="email" class="form-label">No Rekening</label>
+                <input type="text" class="form-control" id="no_rek" name="no_rek" value="<?php echo $user_data['no_rek']; ?>" >
+              </div>
+              <div class="input-wrapper" style="flex: 1;">
+                <label for="email" class="form-label">Nama Pemilik Rekening</label>
+                <input type="text" class="form-control" id="pemilik_rek" name="pemilik_rek" value="<?php echo $user_data['pemilik_rek']; ?>" >
+              </div>
+              <div class="input-wrapper" style="flex: 1;">
+                <label for="email" class="form-label">Nama Bank</label>
+                <input type="text" class="form-control" id="bank_rek" name="bank_rek" value="<?php echo $user_data['bank_rek']; ?>" >
+              </div>
+            </div>
+
+          </div>
 
 
           </div>
@@ -377,11 +414,6 @@
 
 
                   </div>
-                </div>
-
-                <div class="mb-3 col-lg-12 ps-5 pe-3 col-md-12 input-wrapper form-container">
-                  <label for="alamat_peternakan" class="form-label">Nomor Rekening</label>
-                  <input type="text" class="form-control" id="no_rek" name="no_rek" value="<?php echo $user_data['no_rek']; ?>">
                 </div>
 
                 <div class="mb-3 col-lg-12 ps-5 pe-3 col-md-12 input-wrapper form-container">

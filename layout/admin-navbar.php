@@ -11,9 +11,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-                  <a class="mx-4 nav-link text-light " aria-current="page" href="index-ahli.php">Ahli</a>
+                  <!-- <a class="mx-4 nav-link text-light " aria-current="page" href="index-ahli.php">Ahli</a> -->
                   <a class="mx-4 nav-link  text-light" href="index-informasi.php">Informasi</a>
-                  <a class="mx-4 nav-link text-light" href="index-diskusi.php">Forum</a>
+                  <!-- <a class="mx-4 nav-link text-light" href="index-diskusi.php">Forum</a> -->
+                  <a class="mx-4 nav-link text-light" href="index-transaksi.php">Transaksi</a>
                   <a class="mx-4 nav-link text-light" href="read-user.php">Manage User</a>
                   <a class="mx-4 nav-link text-light" href="index-komoditas.php">Manage Komoditas</a>
                   <a class="mx-4 nav-link text-light" href="index-faq.php">FAQ</a>
