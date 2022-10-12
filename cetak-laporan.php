@@ -100,7 +100,6 @@
                         <hr>
                         <div class="row">
                             <div class="col-12">
-                                <p><strong>Laporan Penjualan pada : dsadsa</strong></p>
                             </div>
                         </div>
                         
@@ -115,7 +114,6 @@
                                     <th>Harga</th>
                                 </tr>
                             </thead>
-                            
                         </table>
 
                         <hr>
