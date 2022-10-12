@@ -100,7 +100,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-12">
-                                <p><strong>Laporan Penjualan pada : '. date_format($date_start,"d M Y") .' s/d '. date_format($date_end,"d M Y") .'</strong></p>
+                                <p><strong>Laporan Penjualan pada : dsadsa</strong></p>
                             </div>
                         </div>
                         
