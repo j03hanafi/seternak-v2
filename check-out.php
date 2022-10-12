@@ -148,7 +148,7 @@ $pecah = pg_fetch_assoc($query);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- icon boostrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <style>
     /* .number{
@@ -295,6 +295,65 @@ $pecah = pg_fetch_assoc($query);
       }
 
     }
+
+    custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
   </style>
 
 
@@ -369,13 +428,14 @@ $pecah = pg_fetch_assoc($query);
               }?>
 
                 <div class="mb-3 pe-5 ps-5">
-                  <select class="form-control" name="metode_pengiriman" id="metode_pengiriman" required>
+                  <select class="form-select" name="metode_pengiriman" id="metode_pengiriman" required>
                     <option value="1">Payokurir</option>
                     <option value="2">Go-send</option>
                     <?php if($total >= 500000){ ?>
                     <option value="3">Pengantaran Langsung</option>
                     <?php } ?>
                   </select>
+
                 </div>
 
               </div>
@@ -524,24 +584,7 @@ $pecah = pg_fetch_assoc($query);
   <script src="https://cdn.datatables.net/1.10.14/js/jquery.dataTables.min.js"></script>
   <script src="js/main.js"></script>
 
-
   <script>
-    // $(document).ready(function() {
-    //   $('.minus').click(function() {
-    //     var $input = $(this).parent().find('input');
-    //     var count = parseInt($input.val()) - 1;
-    //     count = count < 0 ? 0 : count;
-    //     $input.val(count);
-    //     $input.change();
-    //     return false;
-    //   });
-    //   $('.plus').click(function() {
-    //     var $input = $(this).parent().find('input');
-    //     $input.val(parseInt($input.val()) + 1);
-    //     $input.change();
-    //     return false;
-    //   });
-    // });
 
 
     const plus = document.getElementById('plus');

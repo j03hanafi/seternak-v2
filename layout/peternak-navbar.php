@@ -18,19 +18,19 @@
         </div>
             <div  class="ms-auto">
             <ul class="navbar-nav ">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Hi, <?php echo $username; ?>
-                        </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hi, <?php echo $username; ?>
+                    </a>
 
 
-                        <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #0e8550;" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="index-profile-peternak.php">Profile</a></li>
-                            <li><a class="dropdown-item" href="so-belumbayar-peternak.php">Status Order</a></li>
-                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #0e8550;" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="index-profile-peternak.php">Profile</a></li>
+                        <li><a class="dropdown-item" href="so-belumbayar-peternak.php">Status Order</a></li>
+                        <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
             </div>
         </div>
     </div>
