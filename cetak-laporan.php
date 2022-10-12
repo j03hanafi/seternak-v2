@@ -33,7 +33,7 @@
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
                         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-                    
+                   
                 </head>
 
                 <body>
@@ -51,6 +51,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-12">
+                                <p><strong>Laporan Penjualan pada : '. date_format($date_start,"d M Y") .' s/d '. date_format($date_end,"d M Y") .'</strong></p>
                             </div>
                         </div>
                         
@@ -65,6 +66,33 @@
                                     <th>Harga</th>
                                 </tr>
                             </thead>
+                            <tbody>';
+
+                                $no = 1;
+                                $total_harga = 0;
+                                while($data = pg_fetch_object($datas)): 
+                                $harga = "Rp. ".number_format($data->harga, 0, ',', '.'). ",00";
+                                $date=date_create($data->tgl_pesan);
+                                
+                                $html .=
+                                    '<tr>
+                                        <td>'.$no.'</td>
+                                        <td>'.$data->nama_produk.'</td>
+                                        <td>'.$data->nama_usaha.'</td>
+                                        <td>'.date_format($date,"d M Y").'</td>
+                                        <td>'.$data->kuantitas.'</td>
+                                        <td>'.$harga.'</td>
+                                    </tr>';
+
+                                $total_harga = $total_harga + $data->harga;
+                                $no++;
+                                endwhile; 
+
+                                $html .= '<tr>
+                                    <th colspan="5">Total</th>
+                                    <th>'. "Rp. ".number_format($total_harga, 0, ',', '.'). ",00".'</th>
+                                </tr>
+                            </tbody>
                         </table>
 
                         <hr>
