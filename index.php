@@ -127,7 +127,8 @@
             <div class="row mb-4">
                 <div class="col text-center">
                     <h2 class="mb-4 text-center fw-bold">Update Harga</h2>
-                    <p>Harga komoditas per-tanggal 22 September 2022</p>
+                    <?php date_default_timezone_set('Asia/Jakarta');; ?>
+                    <p>Harga komoditas per-tanggal <?php echo date('d-m-Y', time()) ; ?></p>
                 </div>
             </div>
             <div class="row text-center">
