@@ -119,6 +119,35 @@
         </div>
         <br><br>
     </section>
+
+    <!--komoditas -->
+    <section id="komoditas">
+    <br><br>
+    <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="mb-4 text-center fw-bold">Update Harga</h2>
+                    <p>Harga komoditas per-tanggal 22 September 2022</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <?php
+                $info = pg_query($conn,"SELECT * FROM komoditas");
+                while ($komo = pg_fetch_array($info)){
+                ?>
+                <div class="col-md-4 mb-3 px-3">
+                    <img src="assets/commodity.png" alt="" style="margin-bottom:35px;">
+                    <h6><b><?php echo $komo['nama_komoditas']; ?></b></h6>
+                    <h3 style="color:green"><b>Rp <?php echo $komo['harga_komoditas']; ?></b></h3>
+                    <p>/<?php echo $komo['satuan_komoditas']; ?></p>
+                </div>
+                <?php
+                    }
+                ?>
+            </div>
+        </div>
+    <br><br>
+</section>
     <!-- bagaimanahijauend -->
 
     <!-- slider -->
@@ -403,8 +432,8 @@
             </div>
         </div>
         <br><br>
-    </section>
-    <!-- Tahukahkamuend -->
+</section>
+<!-- Tahukahkamuend -->
 
 
 
