@@ -41,7 +41,7 @@
             <div class="row">
                 <div id="hero" class="col-md-4" style="margin-left:190px">
                     <h1 class="display-2 text-light bold fw-bold" class="responsive-font-example">Seternak</h1>
-                    <p class="lead text-light">Aplikasi yang mengintegrasikan kegiatan peternak dengan fitur mentoring, forum, marketplace, dan info <?php echo $_SESSION['role'] ; ?></p>
+                    <p class="lead text-light">Aplikasi yang mengintegrasikan kegiatan peternak dengan fitur mentoring, forum, marketplace, dan info</p>
                     <div class="d-flex">
                         <?php 
                             if($_SESSION){
@@ -137,7 +137,15 @@
                 while ($komo = pg_fetch_array($info)){
                 ?>
                 <div class="col-md-4 mb-3 px-3">
+                    <?php if($komo['id_komoditas'] == 'zT0EbrzhG1qK'){ ?>
+                    <img src="assets/icon-telur.jpeg" alt="" style="margin-bottom:35px;">
+                    <?php }elseif($komo['id_komoditas'] == 'eWvpUlZ99vaU'){ ?>
+                    <img src="assets/icon-ayam.jpeg" alt="" style="margin-bottom:35px;">
+                    <?php }elseif($komo['id_komoditas'] == 'LOGXAcFR78aR'){ ?>
+                    <img src="assets/icon-jagung.jpeg" alt="" style="margin-bottom:35px;">
+                    <?php }else{  ?>
                     <img src="assets/commodity.png" alt="" style="margin-bottom:35px;">
+                    <?php } ?>
                     <h6><b><?php echo $komo['nama_komoditas']; ?></b></h6>
                     <h3 style="color:green"><b>Rp <?php echo $komo['harga_komoditas']; ?></b></h3>
                     <p>/<?php echo $komo['satuan_komoditas']; ?></p>
