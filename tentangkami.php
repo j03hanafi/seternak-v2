@@ -35,9 +35,9 @@
         <section class="jumbotron_about" class="jumbotron" style="padding-top:150px;padding-bottom:100px" class="img-fluid">
             <div class="container fluid">
             <div class="row">
-                <div id="hero" class="col-md-8 px-4" style="margin-left:190px" >
+                <div id="hero" class="col-md-10 px-4" style="margin-left:190px" >
                     <h1 class="display-4 text-light bold fw-bold" class="responsive-font-example">Apa itu Seternak</h1>
-                    <p class="lead text-light">Seternak adalah sebuah aplikasi yang mengintegrasikan kegiatan peternak dengan fitur mentoring, forum, marketplace, dan info. </p> 
+                    <p class="lead text-light">Berdiri pada tahun 2022, Seternak hadir sebagai produk lokapasar agrobisnis lokal terkemuka di Sumatera Barat. Dengan berbasis teknologi, kami menjembatani kebutuhan sapronak (sarana produksi peternakan) dan hapronak (hasil produksi peternakan) di  Kota Payakumbuh yang dapat dipesan kapan pun dan di mana pun.</p> 
                     <!-- <div class="d-flex">
                             <button type="button" class="btn btn-light mx-1 text-success shadow">Daftar</button>
                             <button type="button" class="btn btn-success mx-1 hijau shadow">Masuk</button>
@@ -49,51 +49,22 @@
     <!-- Jumbotronend -->
 
 
-    <!-- Siapa Ambyar -->
-    <section class="my-4">
-        <div class="container pb-4">
-            <div class="row text-center pt-4">
-                <div class="col font-hijau">
-                    <h1>
-                    Siapa itu Ambyar
-                    </h1>
+    <!-- Komitmen Seternak -->
+    <section id="komitmen">
+        <div class="container py-5">
+            <div class="row px-4 justify-content-center">
+                <div id="list" class="col-md-6 py-3">
+                    <h2>Komitmen Seternak</h2>
+                    <p>Melalui jejaring pendistribusian yang terintegrasi dengan baik, Seternak berkomitmen untuk menyediakan kebutuhan sapronak dan hapronak dengan harga yang terjangkau.</p>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                    <div class="col-md-6 text-center py-4">
-                        <p>Ambyar adalah akronim dari Anak Muda Berbudaya dan Berkarya, sekumpulan muda mudi yang menyamakan visi untuk memanfaatkan perhelatan kebudayaan lokal sebagai bentuk pengabdian terhadap pemajuan kebudayaan lewat perlombaan Kemah Budaya Kaum Muda. </p>
-                    </div>
-            </div>
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-lg-2 col-md-6">
-                    <img id="mmbr" src="assets/galih.png" alt="" style="height:200px;">
-                    <h5 class="font-hijau pt-3">Galih</h5>
-                    <p>Project Manager</p>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <img id="mmbr" src="assets/rahmat.png" alt="">
-                    <h5 class="font-hijau pt-3">Rahmat</h5>
-                    <p>Software Developer</p>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <img id="mmbr" src="assets/dinda.png" alt="">
-                    <h5 class="font-hijau pt-3">Dinda</h5>
-                    <p>Administration & Finances Manager</p>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <img id="mmbr" src="assets/fathur.png" alt="">
-                    <h5 class="font-hijau pt-3">Fathur</h5>
-                    <p>Research & Business Development Managerr</p>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <img id="mmbr" src="assets/athaya.png" alt=""> 
-                    <h5 class="font-hijau pt-3">Athaya</h5>
-                    <p>Visual Designer</p>
+                <div class="col-md-3 text-center">
+                    <img src="assets/ayam.jpg" style="width:115px; height:163px;">
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- Siapa Ambyar end -->
+    <!-- Komitmen Seternak end -->
 
     <!-- Quote -->
         <section class="hijau py-4 px-4">

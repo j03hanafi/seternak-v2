@@ -12,6 +12,7 @@
                 <div class="col">
                     <img src="assets/logop.jpg" alt="" style="width:40px;height:40px">
                 </div>
+                <div id="ifoot" class="col-sm-2 pt-2 text-end"><a class=" nav-link text-light " aria-current="page" href="tentangkami.php">Tentang Kami</a></div>
                 <div id="ifoot" class="col-sm-2 pt-2 text-end"><a class=" nav-link text-light " aria-current="page" href="index-pasar.php">Pasar</a></div>
                 <div id="ifoot" class="col-sm-2 pt-2 text-end"><a class=" nav-link  text-light" href="index-tanya-ahli-mitra.php">Tanya Ahli</a></div>
                 <div id="ifoot" class="col-sm-2 pt-2 text-end"><a class=" nav-link text-light" href="index-forum-mitra.php">Diskusi</a></div>

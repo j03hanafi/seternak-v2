@@ -41,7 +41,7 @@
             <div class="row">
                 <div id="hero" class="col-md-4" style="margin-left:190px">
                     <h1 class="display-2 text-light bold fw-bold" class="responsive-font-example">Seternak</h1>
-                    <p class="lead text-light">Aplikasi yang mengintegrasikan kegiatan peternak dengan fitur mentoring, forum, marketplace, dan info</p>
+                    <p class="lead text-light">Aplikasi lokapasar komoditas sarana dan hasil produksi peternakan</p>
                     <div class="d-flex">
                         <?php 
                             if($_SESSION){
@@ -63,7 +63,7 @@
     <!-- Jumbotronend -->
 
     <!-- Tujuan Seternak -->
-    <section id="tujuan">
+    <!-- <section id="tujuan">
         <div class="container py-5">
             <div class="row px-4 justify-content-center">
                 <div id="list" class="col-md-6 py-3">
@@ -81,10 +81,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Tujuanseternakend -->
 
-
+    <br><br>
     <!-- bagaimanahijau -->
     <section id="bagaimana" class="hijau">
         <br><br><br>
@@ -95,31 +95,22 @@
                 </div>
             </div>
             <div class="row text-center text-light">
-                <div class="col-md-3 mb-4 px-4">
+                <div class="col-md-6 mb-2 px-2">
                     <img src="assets/marketplace.png" alt="">
                     <h5>Marketplace</h5>
-                    <p>Menghubungkan peternak ayam dengan bisnis olahan ayam</p>
+                    <p>Menghubungkan peternak ayam dengan calon konsumen. <br>
+                        Dilengkapi dengan fitur pendukung bisnis yang terintegrasi.</p>
                 </div>
-                <div class="col-md-3 mb-4 px-4">
-                    <img src="assets/mentoring.png" alt="">
-                    <h5>Mentoring</h5>
-                    <p>Pakar ternak ayam dan pengelola peternakan handal ayam</p>
-                </div>
-                <div class="col-md-3 mb-4 px-4">
-                    <img src="assets/forum.png" alt="">
-                    <h5>Forum</h5>
-                    <p>Media interaktif yang memungkinkan peternak ayam di desa terhubung dan berkomunikasi secara online</p>
-                </div>
-                <div class="col-md-3 mb-4 px-4">
+                <div class="col-md-6 mb-2 px-2">
                     <img src="assets/info.png" alt="">
-                    <h5>Info</h5>
-                    <p>Informasi trivia peternakan di Sumatera Barat</p>
+                    <h5>Berita</h5>
+                    <p>Menampilkan harga komoditas peternakan setiap <br> hari serta artikel mengenai kondisi pasar terkini.</p>
                 </div>
             </div>
         </div>
         <br><br>
     </section>
-
+    <br><br>
     <!--komoditas -->
     <section id="komoditas">
     <br><br>

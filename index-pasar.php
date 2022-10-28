@@ -16,14 +16,20 @@ $username = $_SESSION['username'];
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- owl caurasl min.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- owl caurasel Theme.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- icon boostrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 
@@ -247,9 +253,10 @@ $username = $_SESSION['username'];
 
       }
 
-.bg-body{
-  height:100%;
-}
+      .bg-body {
+        height: 100%;
+      }
+
       video {
         width: 250px;
         height: 150px;
@@ -336,10 +343,21 @@ $username = $_SESSION['username'];
 
 
   <!-- Awal Body -->
+  <section id="jumbotron_home" class="jumbotron"
+    style="padding-top:150px;padding-bottom:100px;margin:80px 80px 0px 80px" class="img-fluid">
+    <div class="container">
+      <div class="row">
+        <div id="hero" class="col-md-4" style="margin-left:190px">
+          <h1 class="display-2 text-light bold fw-bold" class="responsive-font-example">Seternak</h1>
+          <p class="lead text-light">Aplikasi lokapasar komoditas sarana dan hasil produksi peternakan</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="container-lg mt-5 tampung" style="min-height:56.4vh;">
 
-  <?php if (isset($pecah['nama_usaha'], $pecah['alamat_usaha'])) {
+    <?php if (isset($pecah['nama_usaha'], $pecah['alamat_usaha'])) {
 
 ?>
     <form action="" method="post">
@@ -355,9 +373,9 @@ $username = $_SESSION['username'];
 
     <div class="row" style="min-height:inherit; margin:1rem;">
 
-    
 
-        <?php
+
+      <?php
 
         error_reporting(0);
 
@@ -421,23 +439,25 @@ $username = $_SESSION['username'];
         while ($user_data = pg_fetch_array($result)) {
         ?>
 
-          <div class="col-md-3 col-sm-6 kolom" data-bs-toggle="modal">
+      <div class="col-md-3 col-sm-6 kolom" data-bs-toggle="modal">
 
 
-            <a href="form-show-marketplace.php?id_produk=<?php echo $user_data['id_produk']; ?>" target="_blank">
-              <div class="card shadow bg-body" >
+        <a href="form-show-marketplace.php?id_produk=<?php echo $user_data['id_produk']; ?>" target="_blank">
+          <div class="card shadow bg-body">
 
-                <img src="assets/produk/<?php echo $user_data['foto']; ?>" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6 class="card-title font-hijau fw-bold hapuslink"><?php echo $user_data['nama_produk']; ?></h6>
-                  <p class="hapuslink">Rp <?php echo number_format($user_data['harga'], '0', ',', '.'); ?>/<?php echo $user_data['satuan']; ?> </p>
+            <img src="assets/produk/<?php echo $user_data['foto']; ?>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6 class="card-title font-hijau fw-bold hapuslink"><?php echo $user_data['nama_produk']; ?></h6>
+              <p class="hapuslink">Rp
+                <?php echo number_format($user_data['harga'], '0', ',', '.'); ?>/<?php echo $user_data['satuan']; ?>
+              </p>
 
-                  <div class="d-flex flex-wrap ">
+              <div class="d-flex flex-wrap ">
 
-                    <div class="card-text align-self-end ukuran-f" style="flex: 1; position:relative;">
-                      <!-- <input  name="rating" class="rating" data-min="0" data-max="5" value="2"> -->
+                <div class="card-text align-self-end ukuran-f" style="flex: 1; position:relative;">
+                  <!-- <input  name="rating" class="rating" data-min="0" data-max="5" value="2"> -->
 
-                      <?php
+                  <?php
 
                       $id_produk = $user_data['id_produk'];
                       $rate = pg_query("SELECT AVG(rating) as rate from pemesanan 
@@ -447,71 +467,74 @@ $username = $_SESSION['username'];
 
                       if (isset($pecah2['rate'])) {
                         for ($i = 0; $i < $pecah2['rate']; $i++) { ?>
-                          <span class="fa fa-star checked hapuslink ukuran-f" class="m-1"></span>
-                        <?php
+                  <span class="fa fa-star checked hapuslink ukuran-f" class="m-1"></span>
+                  <?php
                         }
                       } else {
                         ?>
-                        <span class="text-black-50 hapuslink ukuran-f">Not Rated</span>
-                      <?php } ?>
-                    </div>
+                  <span class="text-black-50 hapuslink ukuran-f">Not Rated</span>
+                  <?php } ?>
+                </div>
 
 
-                    <div class="card-text">
-                      <p class="teks-card"><small class="fw-bold hapuslink kanan"><?php echo $user_data['nama_peternakan']; ?></small></p>
-                      <p class="teks-card"><small class="font-hijau hapuslink kanan"><?php echo $user_data['waktu_produksi']; ?></small></p>
-                      <p class="teks-card"><small class="font-hijau hapuslink kanan"><?php echo $user_data['stok']; ?> stock</small></p>
-
-                    </div>
-
-
-
-
-                  </div>
-
-
-
+                <div class="card-text">
+                  <p class="teks-card"><small
+                      class="fw-bold hapuslink kanan"><?php echo $user_data['nama_peternakan']; ?></small></p>
+                  <p class="teks-card"><small
+                      class="font-hijau hapuslink kanan"><?php echo $user_data['waktu_produksi']; ?></small></p>
+                  <p class="teks-card"><small class="font-hijau hapuslink kanan"><?php echo $user_data['stok']; ?>
+                      stock</small></p>
 
                 </div>
+
+
+
+
               </div>
-            </a>
 
 
+
+
+            </div>
           </div>
+        </a>
 
 
-          <!-- untuk melihat bentuk-bentuk modal kalian bisa mengunjungi laman bootstrap dan cari modal di kotak pencariannya -->
-          <!-- id setiap modal juga harus berbeda, cara membedakannya dengan menggunakan id_barang -->
+      </div>
+
+
+      <!-- untuk melihat bentuk-bentuk modal kalian bisa mengunjungi laman bootstrap dan cari modal di kotak pencariannya -->
+      <!-- id setiap modal juga harus berbeda, cara membedakannya dengan menggunakan id_barang -->
 
 
 
 
 
-        <?php
+      <?php
         }
         ?>
 
 
 
-        <?php if ($cek == "0") { ?>
+      <?php if ($cek == "0") { ?>
 
-          <div style=" display: flex; justify-content:center; align-items:center;">
-            <div class="shadow rounded bg-body our-team p-5">
+      <div style=" display: flex; justify-content:center; align-items:center;">
+        <div class="shadow rounded bg-body our-team p-5">
 
-              <div class="team-content">
-                <h5 class="font-hijau fw-bold">Data tidak Ditemukan</h5>
+          <div class="team-content">
+            <h5 class="font-hijau fw-bold">Data tidak Ditemukan</h5>
 
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
 
 
-        <?php } ?>
+      <?php } ?>
 
 
 
 
-        <!-- Button trigger modal -->
+      <!-- Button trigger modal -->
 
       <?php
       } else {
@@ -519,17 +542,17 @@ $username = $_SESSION['username'];
 
 
 
-        <section>
-          <div class="container">
-            <div class="row my-5">
-              <div class="col text-center mt-5">
-                <img src="assets/notfound.svg" class="my-5" alt="" width="350px" height="150px">
-                <h5 class="text-muted">Isi data Mitra terlebih dahulu...</h5>
-                <a href="index-profile-mitra.php" class="btn btn-success mt-2 mb-5">Go to profile</a>
-              </div>
+      <section>
+        <div class="container">
+          <div class="row my-5">
+            <div class="col text-center mt-5">
+              <img src="assets/notfound.svg" class="my-5" alt="" width="350px" height="150px">
+              <h5 class="text-muted">Isi data Mitra terlebih dahulu...</h5>
+              <a href="index-profile-mitra.php" class="btn btn-success mt-2 mb-5">Go to profile</a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       <?php } ?>
 
@@ -537,14 +560,50 @@ $username = $_SESSION['username'];
 
 
     </div>
-
-
+    
   </div>
-
-
+  
+  
   <!-- </form> -->
-  </div>
+</div>
+<br><br>
+<section class="faq p-4">
+  <h1 class=" mb-5  text-center fw-bold" class="responsive-font-example">Frequently Asked Questions</h1>
+  <div class="container accordion accordion-flush justify-content-center " id="accordionFlushExample"
+    style="max-width: 50rem;">
 
+    <?php
+        $i = 0;
+        $result = pg_query($conn, "SELECT * FROM faq_seternak");
+        while ($user_data = pg_fetch_array($result)) {
+        ?>
+
+    <div class="accordion-item mb-3 shadow mb-3 bg-white rounded">
+      <h2 class="accordion-header" id="flush-headingOne<?php echo $user_data['id_faq']; ?>">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne<?php echo $user_data['id_faq']; ?>" aria-expanded="false"
+          aria-controls="flush-collapseOne<?php echo $user_data['id_faq']; ?>">
+          <?php echo $user_data['pertanyaan']; ?>
+        </button>
+      </h2>
+      <div id="flush-collapseOne<?php echo $user_data['id_faq']; ?>" class="accordion-collapse collapse"
+        aria-labelledby="flush-headingOne<?php echo $user_data['id_faq']; ?>"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><?php echo $user_data['jawaban']; ?></div>
+      </div>
+    </div>
+
+
+    <?php
+        }
+        ?>
+
+
+
+
+  </div>
+</section>
+<br><br>
 
 
   <!-- Footer -->
@@ -553,17 +612,23 @@ $username = $_SESSION['username'];
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script> -->
   <!-- <script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script> -->
   <!-- jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- owl cousel min.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
     $("#ratinginput").rating();
