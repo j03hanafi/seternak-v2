@@ -5,17 +5,6 @@ session_start();
 $_SESSION['username'] = 'peternak';
 $username = $_SESSION['username'];
 // Query Ini buat isset kalo kalo data peternak belum diisi
-$query=("SELECT produk.harga, detail_pemesanan.kuantitas, tgl_pesan from pemesanan
-left join detail_pemesanan on pemesanan.no_pemesanan=detail_pemesanan.no_pemesanan
-left join produk on detail_pemesanan.id_produk=produk.id_produk 
-left join peternak on produk.id_peternak=peternak.id_peternak 
-where peternak.id_peternak='$username'
-AND detail_pemesanan.status!='1'
-AND to_char(pemesanan.tgl_pesan, 'YYYY-MM') = '2021-11'");
-$datas = pg_query($conn,$query); 
-while($data = pg_fetch_object($datas)):
-  $result [] = array($data);
-endwhile;
 
 $this_year = '2022';
 $month_index = 1;

@@ -5,7 +5,7 @@ session_start();
 $_SESSION['username'] = 'peternak';
 $username = $_SESSION['username'];
 // Query Ini buat isset kalo kalo data peternak belum diisi
-$this_year = '2021';
+$this_year = '2022';
 
 $query1=("SELECT id_produk, nama_produk from produk
 where id_peternak='$username'");
@@ -25,7 +25,6 @@ while($data = pg_fetch_object($datas)):
   AND detail_pemesanan.status!='1'
   AND detail_pemesanan.id_produk = '$data->id_produk'
   AND to_char(pemesanan.tgl_pesan, 'YYYY') = '$this_year'");
-
 $charts = pg_query($conn,$query2); 
 while($chart = pg_fetch_object($charts)){
   if($chart->total){

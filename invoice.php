@@ -36,10 +36,7 @@
                 size: landscape
             }
         }
-
-        @page {
-            size: A4 landscape;
-        }
+        
         body{
             font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
         }
