@@ -15,6 +15,7 @@
     left join peternak on produk.id_peternak=peternak.id_peternak
     left join public.user on peternak.id_peternak=public.user.username
     where peternak.id_peternak='$username' AND pemesanan.tgl_pesan >= '$start' AND pemesanan.tgl_pesan <= '$end'
+    AND detail_pemesanan.status!='1'
     ORDER BY pemesanan.tgl_pesan ASC");
 
     $datas = pg_query($conn,$query); 
