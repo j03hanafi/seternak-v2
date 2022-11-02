@@ -3,9 +3,7 @@
 include '../koneksi.php';
 // $jml_barang = $_POST['kuantitas'];
 // $username =$_GET['username'];
-if(isset($_POST['activate']))
-{
-  $username = $_POST['username'];
+  $username = $_GET['username'];
   $query = pg_query($conn, "UPDATE public.user SET verified=2 WHERE username='$username'");
 
   if ($query) {
@@ -13,6 +11,4 @@ if(isset($_POST['activate']))
   } else {
     header("location:https://seternak.herokuapp.com/login.php?activated=false");
   }
-
-}
 ?>
