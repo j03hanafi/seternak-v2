@@ -12,3 +12,4 @@ include '../koneksi.php';
     header("location:https://seternak.herokuapp.com/login.php?activated=false");
   }
 ?>
+

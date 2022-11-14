@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php 
+if(!$_SESSION){
+session_start(); 
+}
+?>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark hijau shadow fixed-top">
   <div class="container">

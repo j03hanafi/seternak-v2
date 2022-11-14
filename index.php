@@ -44,9 +44,11 @@
                     <p class="lead text-light">Aplikasi lokapasar komoditas sarana dan hasil produksi peternakan</p>
                     <div class="d-flex">
                         <?php 
-                            if($_SESSION){
+                            if($_SESSION['role']=="2"){
                         ?>
                         <a href="index-produksaya.php" type="button" class="btn mx-1 text-success shadow hijau text-light">Produk Saya</a>
+                        <?php }elseif($_SESSION['role']=="1"){ ?>
+                        <a href="index-pasar.php" type="button" class="btn mx-1 text-success shadow hijau text-light">Pasar</a>
                         <?php }else{
 
                         ?>
