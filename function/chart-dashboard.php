@@ -2,7 +2,6 @@
 include ('../koneksi.php');
 // $username =$_GET['username'];
 session_start();
-$_SESSION['username'] = 'peternak';
 $username = $_SESSION['username'];
 // Query Ini buat isset kalo kalo data peternak belum diisi
 

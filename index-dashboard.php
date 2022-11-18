@@ -246,7 +246,7 @@
     <script>
         $(document).ready(function() {
             //Line Chart
-            //let base_url = "https://seternak.herokuapp.com/function/chart-dashboard.php";
+            //let base_url = "/seternakv2-master/function/chart-dashboard.php";
             let base_url = "https://seternak.herokuapp.com/function/chart-dashboard.php";
             $.ajax({
                 url: base_url,
@@ -292,7 +292,7 @@
             });
 
             //Doughnut Chart
-            //let url = "https://seternak.herokuapp.com/function/doughnut-chart-dashboard.php";
+            //let url = "/seternakv2-master/function/doughnut-chart-dashboard.php";
             let url = "https://seternak.herokuapp.com/function/doughnut-chart-dashboard.php";
             $.ajax({
                 url: url,

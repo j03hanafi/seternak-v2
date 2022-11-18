@@ -1,6 +1,6 @@
 <?php 
 if(!$_SESSION){
-session_start(); 
+  session_start(); 
 }
 ?>
 <!-- Navbar -->
