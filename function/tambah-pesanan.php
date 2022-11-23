@@ -43,7 +43,7 @@ $username = $_SESSION['username'];
       $sisa = $stock - $kuantitas;
       $updatestock = pg_query("UPDATE produk SET stok =$sisa WHERE id_produk = '$id_produk';") ;
       $updatekeranjang = pg_query("UPDATE keranjang SET status =2 WHERE id_keranjang = '$id_keranjang';") ;
-      header("location:../index-keranjang.php?pesanan=berhasil");
+      header("location:../so-belumbayar-mitra.php?pesanan=berhasil");
 
     }
 
