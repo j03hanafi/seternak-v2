@@ -16,7 +16,7 @@ if(!$_SESSION){
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ">
         <a class="mx-4 nav-link text-light " aria-current="page" href="index.php#home">Seternak</a>
-        <a class="mx-4 nav-link  text-light" href="index.php#tahukahkamu">Tahukah Kamu</a>
+<!--        <a class="mx-4 nav-link  text-light" href="index.php#tahukahkamu">Tahukah Kamu</a>-->
         <a class="mx-4 nav-link text-light" href="tentangkami.php">Tentang Kami</a>
       </div>
       <div class="ms-auto">
