@@ -38,7 +38,7 @@ if(password_verify($password, $data['password'])){
 			$_SESSION['username'] = $username;
 			$_SESSION['role'] = "3";
 			// alihkan ke halaman dashboard admin
-			header("location:index-ahli.php");
+			header("location:index-informasi.php");
 
 		}else{
 
