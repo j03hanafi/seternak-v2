@@ -114,6 +114,9 @@
     </section>
     <br><br>
     <!--komoditas -->
+    <?php
+    if($_SESSION['role']=="2"){
+    ?>
     <section id="komoditas">
     <br><br>
     <div class="container">
@@ -150,6 +153,7 @@
         </div>
     <br><br>
 </section>
+    <?php } ?>
     <!-- bagaimanahijauend -->
 
     <!-- slider -->
