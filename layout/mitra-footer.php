@@ -18,7 +18,7 @@
             </div>
             <hr class="my-2 text-light">
             <div class="row text-light mb-2 footer-wrapper">
-                <div id="ifoot" class="col-md-10">© 2021 Ambyar (Anak Muda Berbudaya dan Berkarya)</div>
+                <div id="ifoot" class="col-md-10">© 2022 Fathurrahman Ananda Menaz</div>
                 <div id="ifoot" class="col-md pt-1 text-end" ><a href="http://"><i class="bi bi-facebook text-light"></i></a></div>
                 <div id="ifoot" class="col-md pt-1 text-end"><a href="http://"><i class="bi bi-instagram text-light"></i></a></div>
                 <div id="ifoot" class="col-md pt-1 text-end"><a href="http://"><i class="bi bi-twitter text-light"></i></a></div>
