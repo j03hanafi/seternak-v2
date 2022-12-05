@@ -107,7 +107,7 @@
                                 <tr>
                                     <th>No</th>
                                     <th>Nama Produk</th>
-                                    <th>Mitra</th>
+                                    <th>Pembeli</th>
                                     <th>Tanggal</th>
                                     <th>Kuantitas</th>
                                     <th>Harga</th>
