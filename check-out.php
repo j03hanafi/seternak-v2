@@ -431,6 +431,7 @@ $pecah = pg_fetch_assoc($query);
                   <select class="form-select" name="metode_pengiriman" id="metode_pengiriman" required>
                     <option value="1">Payokurir</option>
                     <option value="2">Go-send</option>
+                    <option value="2">Self Pickup (Ambil Sendiri)</option>
                     <?php if($total >= 10000000){ ?>
                     <option value="3">Pengantaran Langsung</option>
                     <?php } ?>
