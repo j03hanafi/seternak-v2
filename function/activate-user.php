@@ -7,9 +7,9 @@ include '../koneksi.php';
   $query = pg_query($conn, "UPDATE public.user SET verified=2 WHERE username='$username'");
 
   if ($query) {
-    header("location:https://seternak.herokuapp.com/login.php?activated=true");
+    header("location:https://seternak.azurewebsites.net/login.php?activated=true");
   } else {
-    header("location:https://seternak.herokuapp.com/login.php?activated=false");
+    header("location:https://seternak.azurewebsites.net/login.php?activated=false");
   }
 ?>
 

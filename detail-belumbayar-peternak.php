@@ -195,7 +195,7 @@
                                 <div class="carousel-item active">
                                     <?php if(isset($image->bukti_pembayaran)){ ?>
                                         
-                                <img src="https://seternak.herokuapp.com/upload/<?=$image->bukti_pembayaran?>" class="d-block w-100" alt="...">
+                                <img src="https://seternak.azurewebsites.net/upload/<?=$image->bukti_pembayaran?>" class="d-block w-100" alt="...">
                                 <?php 
                                     }else{
                                 ?>

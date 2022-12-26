@@ -226,7 +226,7 @@
                                                     data-bs-ride="carousel">
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img src="https://seternak.herokuapp.com/upload/<?=$data->bukti_pembayaran?>"
+                                                            <img src="https://seternak.azurewebsites.net/upload/<?=$data->bukti_pembayaran?>"
                                                                 class="d-block w-100" alt="...">
                                                         </div>
                                                     </div>
