@@ -415,7 +415,7 @@ $pecah = pg_fetch_assoc($query);
                             </td>
 
 
-                            <td id="harga" class="font-p"><?php echo $user_data['harga']; ?></td>
+                            <td id="harga" class="font-p"><?php echo number_format($user_data['harga'],0,".","."); ?></td>
                             <td class="font-p d-flex justify-content-center">
                               <input id="stock" type="text" name="kuantitas" readonly value="<?php echo $user_data['jumlah']; ?>" required />
                               <?php

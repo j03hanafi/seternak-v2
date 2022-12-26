@@ -184,7 +184,7 @@
                                                     <img src="assets/produk/<?php echo $pecah['foto']; ?>" alt="" style="width:100px;height: 100px;">
                                                 </td>
                                                 <td><?php echo $pecah['nama_produk']; ?></td>
-                                                <td class="text-center"><?php echo $pecah['harga']; ?></td>
+                                                <td class="text-center"><?php echo number_format($pecah['harga'],0,".","."); ?></td>
                                                 <td class="text-center">
                                                     <?php 
                                                         if($pecah['stok']<1){
