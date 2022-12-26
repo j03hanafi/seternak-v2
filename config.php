@@ -9,7 +9,7 @@
 
 	$host = "ep-icy-snow-409583.ap-southeast-1.aws.neon.tech";
 	$user = "desimilay";
-	$pass = "ymtEh6Ve9fJa";
+	$pass = "project=ep-icy-snow-409583;ymtEh6Ve9fJa";
 	$port = "5432";
 	$dbname = "neondb";
 	$dbconn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
