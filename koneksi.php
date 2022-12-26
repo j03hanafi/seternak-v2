@@ -6,11 +6,14 @@
 	// $port = "5432";
 	// $dbname = "dvaq6sqisd3nt";
 	// $conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
-
+// ?options=project%3D&lt;project-id&gt;
+// options=project%3Dep-icy-snow-409583
+// options=project%3Dep-icy-snow-409583
+// project=ep-icy-snow-409583;ymtEh6Ve9fJa
 	$host = "ep-icy-snow-409583.ap-southeast-1.aws.neon.tech";
 	$user = "desimilay";
-	$pass = "ymtEh6Ve9fJa";
+	$pass = "project=ep-icy-snow-409583;ymtEh6Ve9fJa";
 	$port = "5432";
 	$dbname = "neondb";
-	$conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal");
+	$conn = pg_connect("host=".$host." port=".$port." dbname=".$dbname." user=".$user." password=".$pass) or die("Gagal Koneksi Database");
 ?>
